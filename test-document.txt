@@ -1,0 +1,28 @@
+RAG Chatbot Documentation
+
+This is a test document for the RAG (Retrieval-Augmented Generation) chatbot system.
+
+Features:
+- Document upload and processing
+- Text extraction from PDF, TXT, and DOCX files
+- Vector embedding generation using Groq API
+- Semantic search capabilities
+- AI-powered chat responses
+
+Architecture:
+The system uses Supabase for backend services including:
+- Authentication and user management
+- File storage in dedicated buckets
+- PostgreSQL database with vector extensions
+- Edge Functions for document processing and chat queries
+
+The frontend is built with vanilla HTML, CSS, and JavaScript for maximum compatibility and performance.
+
+Testing Instructions:
+1. Sign up for a new account or sign in with existing credentials
+2. Upload a document using the file upload interface
+3. Wait for processing to complete
+4. Start chatting with questions about the uploaded content
+5. The system will provide AI-generated responses based on the document content
+
+This test document contains information about the RAG chatbot system that can be used to verify the chat functionality is working correctly.

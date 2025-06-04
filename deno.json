@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "supabase start",
+    "functions:serve": "supabase functions serve",
+    "functions:deploy": "supabase functions deploy",
+    "db:reset": "supabase db reset"
+  },
+  "imports": {
+    "supabase": "https://esm.sh/@supabase/supabase-js@2"
+  }
+}
