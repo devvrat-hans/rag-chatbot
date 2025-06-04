@@ -2,22 +2,22 @@
   "version": 2,
   "buildCommand": null,
   "outputDirectory": "src",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/pages/index.html"
+      "source": "/",
+      "destination": "/pages/index.html"
     },
     {
-      "src": "/config",
-      "dest": "/pages/config.html"
+      "source": "/config",
+      "destination": "/pages/config.html"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
     },
     {
-      "src": "/templates/(.*)",
-      "dest": "/templates/$1"
+      "source": "/templates/(.*)",
+      "destination": "/templates/$1"
     }
   ],
   "headers": [
