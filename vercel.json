@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "public": true,
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": null,
+  "outputDirectory": "src",
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/templates/(.*)",
+      "dest": "/templates/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/config",
+      "dest": "/pages/config.html"
+    },
+    {
+      "src": "/(.*)\\.js",
+      "dest": "/assets/js/$1.js"
+    },
+    {
+      "src": "/(.*)\\.css",
+      "dest": "/assets/css/$1.css"
+    },
+    {
+      "src": "/",
+      "dest": "/pages/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/pages/$1.html"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/pages/404.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
